@@ -1,0 +1,188 @@
+                        // VARIABLES
+$border: solid white 10px;
+$transition: all ease-in 0.5s;
+                        //  MIXINS
+//Background-cover mixin
+@mixin screenCover{
+  position: absolute;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+@mixin text{
+  font-family:Lato, sans-serif;
+  text-align:center;
+  color:white;
+}
+                    // LOADING OVERLAY
+
+.loadingOverlay{
+  position:absolute;
+  z-index:1000;
+  display:block;
+  @include screenCover;
+  background-color:#1c1c1c;
+}
+.RollingBall{
+  position:relative;
+  width:10em;
+  left:50%;
+  transform:translateX(-50%);
+  top:30vh;
+}
+
+                        // BODY STYLES
+  //Background Selectors
+  body{
+    @include screenCover;
+    background-image:url(../Images/SquareRoom.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  // Title Selectors
+.titleContainer{
+  @include text;
+  position:absolute;
+  z-index:0;
+  top:10%;
+  left:50%;
+  transform:translateX(-50%);
+  width:40%;
+  height:60vh;
+  text-shadow:2px 2px 2px black;
+  h1:nth-child(1){
+    font-weight:300;
+    font-size:6em;
+
+  }
+  h1:nth-child(2){
+    font-size:3.1em;
+    font-weight:lighter;
+  }
+  p{
+    display:inline-block;
+    font-weight:bolder;
+    margin-top:-0.3em;
+    font-size:8.8em;
+  }
+  img{
+    display:block;
+    margin:auto;
+    width:20%;
+  }
+}
+
+// Menu Selectors
+.menu, .cross{
+  position:absolute;
+  z-index:999;
+  width:40px;
+  top:40px;
+  left:5%;
+  cursor:pointer;
+
+}
+                      // SIDE MENU STYLES
+
+.cross{
+  display:none;
+}
+.sideMenu{
+  @include screenCover;
+  background:linear-gradient(90deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 100%);
+  z-index:997;
+  transition:all linear 0.5s;
+li:nth-child(1){
+  margin-top:4em;
+}
+li{
+  cursor:pointer;
+  font-weight:lighter;
+  color:white;
+  font-family: lato, sans-serif;
+  margin: 30px 0px 30px 10px;
+  font-size:2em;
+  list-style-type:none;
+}
+}
+.ng-hide{
+  @include screenCover;
+  transform:translateX(-100vw);
+  background:linear-gradient(90deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 90%);
+  z-index:997;
+  transition:$transition;
+}
+                    // MUSIC SLIDE STYLES
+.musicOverlay{
+  width:100%;
+  height:100vh;
+  background-color:white;
+  position:absolute;
+  z-index:2;
+  transition:$transition;
+.musicText{
+  width:50%;
+  height:100vh;
+  float:right;
+  background-color:#1E1E1E;
+}
+.musicGallery{
+  width:50%;
+  height:100vh;
+  float:left;
+  background-color:red;
+  overflow: hidden;
+img{
+  width:100%;
+  background-size:contain;
+}
+}
+h4{
+  @include text;
+  font-size:1.2em;
+  letter-spacing:0.3em;
+  font-weight:lighter;
+  font-variant:small-caps;
+  margin-top:7em;
+  margin-bottom:1.3em;
+}
+  h1{
+    @include text;
+    font-weight:bolder;
+    font-size:3em;
+  }
+  p{
+    @include text;
+    display:block;
+    margin:auto;
+    width:90%;
+    font-weight:lighter;
+  }
+  .firstParagraph{
+    margin-top:3em;
+  }
+}
+.musicSlideMenatLogo{
+  display:inline-block;
+  background-color:#1E1E1E;
+  position:absolute;
+  left:50%;
+  top:50vh;
+  transform:translate(-50%,-50%);
+  width:80px;
+  height:80px;
+  img{
+    padding-top:30%;
+    display:block;
+    width:30px;
+    margin:auto;
+  }
+}
+.contact{
+  margin-top:2em;
+  display:flex;
+  width:100%;
+  flex-direction: row;
+  justify-content:space-around;
+
+}

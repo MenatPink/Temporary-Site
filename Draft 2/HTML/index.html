@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="menu">
+  <head>
+    <!-- Loading Screen Dependancies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src ="../JS/PageLoadDelay.js"></script>
+    <!-- Search Engine Optimization -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Menat Pink Portfolio</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,100,400">
+    <link rel="stylesheet" href="../CSS/index.css">
+
+                                        <!-- HTML BEGIN -->
+
+  </head>
+                                      <!-- MENU bUTTON HTML -->
+  <body ng-controller='menuCtrl'>
+      <div ng-controller="contentChange">
+        <svg ng-click="menuShow()" class="menuAndCross menu" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 36"><defs><style>.cls-1{fill:#fff;}</style></defs><title>MenuWhiteIcon</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1-2"><path class="cls-1" d="M0,32H56v4H0ZM0,20H56V16H0ZM0,4H56V0H0Z" transform="translate(0 0)"/></g></g></svg>
+        <svg ng-click="menuClear()" class="menuAndCross cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.77 36.77"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Cross</title><g id="crossWhiteIcon" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M21.21,18.38,36.77,33.94l-2.83,2.83L18.38,21.21,2.83,36.77,0,33.94,15.56,18.38,0,2.83,2.83,0,18.38,15.56,33.94,0l2.83,2.83Z"/></g></g></svg>
+        <div class="titleContainer">
+                                            <!-- TITLE HTML -->
+          <h1 class="fadeIn">MENAT</h1>
+          <h1 class="fadeIn">HAWTHORNE</h1>
+          <p class="fadeIn">PINK</p>
+          <img class="fadeIn" src="../Images/Vectors/MenatPinkLogoWhite.svg" alt="Menat Pink Logo">
+        </div>
+        <div class="sideMenu" ng-show="menuValue">
+          <ul>
+            <li ng-click="backHome()">Home</li>
+            <li ng-click="musicContent()">Music</li>
+            <li ng-click="fitnessContent()">Fitness &amp; Fashion</li>
+            <li ng-click="codeContent()">Code</li>
+          </ul>
+        </div>
+
+        <div class="musicOverlay" ng-show="contentValue">
+          <div class="musicText">
+            <h4>{{ profession }}</h4>
+            <h1>{{ title }}</h1>
+              <p class="firstParagraph">{{ paragraph1 }}</p><br>
+              <p>{{ paragraph2 }}</p><br>
+              <p>{{ paragraph3}}</p><br>
+              <div class="contact">
+                <a href="https://www.facebook.com/MenatRaPink/"><img src="../Images/Vectors/FacebookSprite.svg" alt=""></a>
+                <a href="https://www.instagram.com/menatpink/"><img src="../Images/Vectors/InstagramSprite.svg" alt=""></a>
+                <a href="https://twitter.com/MenatRaPink"><img src="../Images/Vectors/TwitterSprite.svg" alt=""></a>
+              </div>
+          </div>
+          <div class="musicSlideMenatLogo">
+            <img src="../Images/Vectors/MenatPinkLogoWhite.svg" />
+          </div>
+          <div class="musicGallery">
+            <img src= "{{graphic}}">
+        </div>
+      </div>
+  </div>
+
+
+                                      <!-- OVERLAY STYLES -->
+<div class="loadingOverlay">
+  <img class ="RollingBall" src="../Images/Vectors/RollingBallAnimation.svg" alt="Loading" />
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="../JS/Modules.js"></script>
+    <script src="../JS/index.js"></script>
+  </body>
+</html>
