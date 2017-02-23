@@ -164,4 +164,9 @@ body {
   .contact a img {
     width: 65px; }
 
+#stage {
+  background-color: orange;
+  width: 50vw;
+  height: 100vh; }
+
 /*# sourceMappingURL=index.css.map */
