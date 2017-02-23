@@ -91,7 +91,6 @@ $transition: all ease-in 0.5s;
   @include screenCover;
   background:linear-gradient(90deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 100%);
   z-index:997;
-  transition:all linear 0.5s;
 li:nth-child(1){
   margin-top:4em;
 }
