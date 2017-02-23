@@ -129,11 +129,12 @@ li{
   width:50%;
   height:100vh;
   float:left;
-  background-color:red;
+  background-color:green;
   overflow: hidden;
 img{
   width:100%;
-  background-size:contain;
+  height:100vh;
+  background-size:cover;
 }
 }
 h4{
@@ -154,7 +155,7 @@ h4{
     @include text;
     display:block;
     margin:auto;
-    width:90%;
+    width:80%;
     font-weight:lighter;
   }
   .firstParagraph{
@@ -183,5 +184,8 @@ h4{
   width:100%;
   flex-direction: row;
   justify-content:space-around;
+  a img{
+    width:65px;
+  }
 
 }

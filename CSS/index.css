@@ -107,11 +107,12 @@ body {
     width: 50%;
     height: 100vh;
     float: left;
-    background-color: red;
+    background-color: green;
     overflow: hidden; }
     .musicOverlay .musicGallery img {
       width: 100%;
-      background-size: contain; }
+      height: 100vh;
+      background-size: cover; }
   .musicOverlay h4 {
     font-family: Lato, sans-serif;
     text-align: center;
@@ -134,7 +135,7 @@ body {
     color: white;
     display: block;
     margin: auto;
-    width: 90%;
+    width: 80%;
     font-weight: lighter; }
   .musicOverlay .firstParagraph {
     margin-top: 3em; }
@@ -160,5 +161,7 @@ body {
   width: 100%;
   flex-direction: row;
   justify-content: space-around; }
+  .contact a img {
+    width: 65px; }
 
 /*# sourceMappingURL=index.css.map */
