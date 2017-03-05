@@ -27,6 +27,7 @@ $scope.contentValue = false;
     $scope.paragraph3 = "It is still worth contacting me for advice, enquiries or a chat!";
     $scope.paragraph4 = "Feel free to e-mail me at menatpink@gmail.com.";
     $scope.githubValue = false;
+    $scope.soundCloudValue = false;
     if($scope.contentValue == false){
       $scope.contentValue = true;
     };
@@ -38,8 +39,9 @@ $scope.contentValue = false;
     $scope.graphic = "../Images/MusicSlide/QueensHead.jpg";
     $scope.paragraph1 = "Self-taught bassist; also proficient in vocals, guitar and drums.";
     $scope.paragraph2 = "Lead singer of a local cover band IMPACT: EDM, House & Dance.";
-    $scope.paragraph3 = "Solo acoustic artist, performing in the thanet area.";
+    $scope.paragraph3 = "Solo acoustic artist, performing in Thanet & Deal.";
     $scope.paragraph4 = "For contact about bookings, send an e-mail to menatpink@gmail.com, or use one of the social platforms below.";
+    $scope.soundCloudValue = true;
     $scope.githubValue = false;
     if($scope.contentValue == false){
       $scope.contentValue = true;
@@ -54,6 +56,7 @@ $scope.contentValue = false;
     $scope.paragraph2 = "Proficient in HTML5/CSS/Bootstrap/Javascript/Jquery/AngularJS/PHP/Adobe Photoshop and Illustrator.";
     $scope.paragraph3 = "I am currently taking on web development projects.";
     $scope.paragraph4 = "If interested, e-mail me at menatpink@gmail.com.";
+    $scope.soundCloudValue = false;
     $scope.githubValue = true;
     if($scope.contentValue == false){
       $scope.contentValue = true;
