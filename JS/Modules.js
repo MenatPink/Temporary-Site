@@ -40,7 +40,7 @@ $scope.contentValue = false;
     $scope.paragraph1 = "Self-taught bassist; also proficient in vocals, guitar and drums.";
     $scope.paragraph2 = "Lead singer of a local cover band IMPACT: EDM, House & Dance.";
     $scope.paragraph3 = "Solo acoustic artist, performing in Thanet & Deal.";
-    $scope.paragraph4 = "For contact about bookings, send an e-mail to menatpink@gmail.com, or use one of the social platforms below.";
+    $scope.paragraph4 = "For contact about bookings or session work, send an e-mail to menatpink@gmail.com, or use one of the social platforms below.";
     $scope.soundCloudValue = true;
     $scope.githubValue = false;
     if($scope.contentValue == false){
@@ -52,7 +52,7 @@ $scope.contentValue = false;
     $scope.profession = "Front-End Web Developer";
     $scope.title = "Code"
     $scope.graphic= "";
-    $scope.paragraph1 = "Self-taught front- end web developer with 2 years of experience";
+    $scope.paragraph1 = "Self-taught front- end web developer with 2 years of experience.";
     $scope.paragraph2 = "Proficient in HTML5/CSS/Bootstrap/Javascript/Jquery/AngularJS/PHP/Adobe Photoshop and Illustrator.";
     $scope.paragraph3 = "I am currently taking on web development projects.";
     $scope.paragraph4 = "If interested, e-mail me at menatpink@gmail.com.";
