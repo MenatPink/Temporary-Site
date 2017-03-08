@@ -186,7 +186,7 @@ body {
     margin-top: 500px; }
   .notMobileReadyOverlay img {
     position: absolute;
-    width: 350px;
+    width: 250px;
     top: 100px;
     left: 50%;
     transform: translateX(-50%); }
